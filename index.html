@@ -39,16 +39,7 @@
     <!-- Recent Reviews Section -->
     <section id="reviews">
       <h2>Recent Reviews</h2>
-      <div class="review">
-        <h3>Pasta Palace</h3>
-        <p>Rating: ⭐⭐⭐⭐</p>
-        <p>Delicious pasta dishes and excellent service. A bit pricey, but worth it!</p>
-      </div>
-      <div class="review">
-        <h3>Bob's Burger Joint</h3>
-        <p>Rating: ⭐⭐⭐</p>
-        <p>Great burgers, but the fries were too salty for my taste.</p>
-      </div>
+      <!-- New reviews will be dynamically added here -->
     </section>
 
     <!-- Submit Review Section -->
@@ -65,6 +56,14 @@
           <option value="3">3 - Average</option>
           <option value="2">2 - Poor</option>
           <option value="1">1 - Terrible</option>
+        </select>
+
+        <label for="category">Category:</label>
+        <select id="category" name="category" required>
+          <option value="Fast Food">Fast Food</option>
+          <option value="Fine Dining">Fine Dining</option>
+          <option value="Casual Dining">Casual Dining</option>
+          <option value="Cafe">Cafe</option>
         </select>
 
         <label for="review">Your Review:</label>
