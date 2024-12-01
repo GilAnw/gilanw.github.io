@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Review Hub</h1>
+    <nav>
+      <a href="#categories">Categories</a>
+      <a href="#submit-review">Submit Review</a>
+    </nav>
+  </header>
+  <main>
+    <section id="categories">
+      <h2>Categories</h2>
+      <div class="category">
+        <h3>Electronics</h3>
+        <p>Latest gadgets and reviews.</p>
+      </div>
+      <div class="category">
+        <h3>Books</h3>
+        <p>Top-rated books by readers.</p>
+      </div>
+    </section>
+    <section id="reviews">
+      <h2>Recent Reviews</h2>
+      <div class="review">
+        <h3>Smartphone XYZ</h3>
+        <p>Rating: ⭐⭐⭐⭐</p>
+        <p>Great performance, but the battery life could be better.</p>
+      </div>
+    </section>
+    <section id="submit-review">
+      <h2>Submit Your Review</h2>
+      <form id="reviewForm">
+        <label for="title">Review Title:</label>
+        <input type="text" id="title" name="title" required>
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating">
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Average</option>
+          <option value="2">2 - Poor</option>
+          <option value="1">1 - Terrible</option>
+        </select>
+        <label for="content">Review Content:</label>
+        <textarea id="content" name="content" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Review Hub</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
