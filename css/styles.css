@@ -1,39 +1,108 @@
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  header {
-    background: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-  }
-  nav a {
-    color: #fff;
-    margin: 0 1rem;
-    text-decoration: none;
-  }
-  section {
-    padding: 2rem;
-  }
-  .category, .review {
-    margin: 1rem 0;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  form label, form input, form textarea, form select, form button {
-    display: block;
-    margin: 1rem 0;
-  }
-  form input, form textarea, form select {
-    width: 100%;
-    padding: 0.5rem;
-  }
-  button {
-    background: #333;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #e63946;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+section {
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Categories */
+.category {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fefefe;
+}
+
+.category h3 {
+  margin-top: 0;
+  color: #e63946;
+}
+
+/* Reviews */
+.review {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fefefe;
+}
+
+.review h3 {
+  margin: 0 0 0.5rem;
+  color: #457b9d;
+}
+
+/* Form */
+form label {
+  font-weight: bold;
+  margin-top: 1rem;
+  display: block;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  background: #e63946;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #d62828;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}

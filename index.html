@@ -3,59 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Review Website</title>
+  <title>Restaurant Reviews</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Review Hub</h1>
+    <h1>Restaurant Review Hub</h1>
     <nav>
       <a href="#categories">Categories</a>
       <a href="#submit-review">Submit Review</a>
     </nav>
   </header>
   <main>
+    <!-- Categories Section -->
     <section id="categories">
-      <h2>Categories</h2>
+      <h2>Restaurant Categories</h2>
       <div class="category">
-        <h3>Electronics</h3>
-        <p>Latest gadgets and reviews.</p>
+        <h3>Fast Food</h3>
+        <p>Burgers, fries, and quick meals!</p>
       </div>
       <div class="category">
-        <h3>Books</h3>
-        <p>Top-rated books by readers.</p>
+        <h3>Fine Dining</h3>
+        <p>Elegant and upscale culinary experiences.</p>
+      </div>
+      <div class="category">
+        <h3>Casual Dining</h3>
+        <p>Relaxed atmosphere and affordable prices.</p>
+      </div>
+      <div class="category">
+        <h3>Cafes</h3>
+        <p>Cozy spots for coffee, pastries, and light meals.</p>
       </div>
     </section>
+
+    <!-- Recent Reviews Section -->
     <section id="reviews">
       <h2>Recent Reviews</h2>
       <div class="review">
-        <h3>Smartphone XYZ</h3>
+        <h3>Pasta Palace</h3>
         <p>Rating: ⭐⭐⭐⭐</p>
-        <p>Great performance, but the battery life could be better.</p>
+        <p>Delicious pasta dishes and excellent service. A bit pricey, but worth it!</p>
+      </div>
+      <div class="review">
+        <h3>Bob's Burger Joint</h3>
+        <p>Rating: ⭐⭐⭐</p>
+        <p>Great burgers, but the fries were too salty for my taste.</p>
       </div>
     </section>
+
+    <!-- Submit Review Section -->
     <section id="submit-review">
-      <h2>Submit Your Review</h2>
+      <h2>Submit Your Restaurant Review</h2>
       <form id="reviewForm">
-        <label for="title">Review Title:</label>
-        <input type="text" id="title" name="title" required>
+        <label for="restaurant-name">Restaurant Name:</label>
+        <input type="text" id="restaurant-name" name="restaurant-name" placeholder="e.g., Sushi World" required>
+
         <label for="rating">Rating:</label>
-        <select id="rating" name="rating">
+        <select id="rating" name="rating" required>
           <option value="5">5 - Excellent</option>
-          <option value="4">4 - Good</option>
+          <option value="4">4 - Very Good</option>
           <option value="3">3 - Average</option>
           <option value="2">2 - Poor</option>
           <option value="1">1 - Terrible</option>
         </select>
-        <label for="content">Review Content:</label>
-        <textarea id="content" name="content" required></textarea>
-        <button type="submit">Submit</button>
+
+        <label for="review">Your Review:</label>
+        <textarea id="review" name="review" rows="5" placeholder="Write your experience here..." required></textarea>
+
+        <button type="submit">Submit Review</button>
       </form>
     </section>
   </main>
+
   <footer>
-    <p>&copy; 2024 Review Hub</p>
+    <p>&copy; 2024 Restaurant Review Hub</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
